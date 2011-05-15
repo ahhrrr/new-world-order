@@ -113,7 +113,7 @@ group "test" do
 end
 CODE
 
-file ".rvmrc", "rvm use #{RVM_RUBY}@#{RVM_GEMSET}\n"
+file ".rvmrc", "rvm use #{RVM_RUBY}@#{RVM_GEMSET} --create\n"
 
 run "rvm #{RVM_RUBY} gemset create #{RVM_GEMSET}"
 rvm_run "gem install bundler"
